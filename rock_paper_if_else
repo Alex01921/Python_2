@@ -1,0 +1,23 @@
+x = input("Enter your choice (r/p/s):")
+y = input("Enter your choice (r/p/s):")
+
+if x == 'r':
+    print("X chooses 🪨")
+elif x == 's':
+    print("X chooses ✂️")
+else:
+    print("X chooses 📃")
+
+if y == 'r':
+    print("Y chooses 🪨")
+elif y == 's':
+    print("Y chooses ✂️")
+else:
+    print("Y chooses 📃")
+
+if (x == 'r' and y == 'r') or (x == 'p' and y == 'p') or (x == 's' and y == 's'):
+    print("Draw")
+elif (x == 'r' and y == 'p') or (x == 'p' and y == 's'):
+    print("Y is winner.")
+else:
+    print("X is winner.")
