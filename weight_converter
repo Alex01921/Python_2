@@ -1,0 +1,10 @@
+weight = float(input("Weight: "))
+weight_type = input("(l)bs or (k)g: ")
+if weight_type.upper() == "K":
+    lbs = weight * 2.2
+    print(f"You are {lbs} pounds")
+elif weight_type.upper() == "L":
+    kg = weight * 0.45
+    print(f"You are {kg} kg.")
+else:
+    print("Error: input only \"K\" or \"L\"")
