@@ -1,0 +1,3 @@
+string = input("Enter your college name:")
+length = len(string)
+print("Length of college name:", length)
