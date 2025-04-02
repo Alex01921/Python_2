@@ -1,0 +1,5 @@
+course = "Python for Beginners"
+print(len(course))
+print(course.istitle())
+print(course.find("Beginners"))
+print("Python" in course)
