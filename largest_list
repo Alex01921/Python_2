@@ -1,0 +1,6 @@
+number = [1,5,9,10,13,4]
+max = number[0]     
+for x in number:
+    if x > max:
+        max = x
+print(max)
