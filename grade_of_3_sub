@@ -1,0 +1,15 @@
+phy = int(input("Enter physics marks:"))
+py = int(input("Enter python marks:"))
+math = int(input("Enter maths marks:"))
+total = phy + py + math
+grade = total / 3
+print(total)
+print(grade)
+if (grade >= 80):
+    print("Grade A:", grade)
+elif (grade >= 60):
+    print("Grade B:", grade)
+elif (grade >= 40):
+    print("Grade C:", grade)
+else:
+    print("Grade D:", grade)
