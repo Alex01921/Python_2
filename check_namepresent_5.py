@@ -1,3 +1,4 @@
+# Develop a program that inputs names of five students and displays if your name is present in the five names.
 your_name = "Ashok"
 a = input("Enter your name:")
 b = input("Enter your name:")
