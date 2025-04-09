@@ -1,3 +1,4 @@
+# Develop a program that prints the first N numbers of Fibonacci sequence.
 n = int(input("Enter a nth term:"))
 n1 = 0
 n2 = 1
