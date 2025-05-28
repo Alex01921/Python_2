@@ -1,36 +1,51 @@
-l1=[]
-l2=[]
-result=[]
+l1 = []
+l2 = []
+result = []
 
-m1=int(input("Enter the order m1:")) 
-n1=int(input("Enter the order n1:"))
-m2=int(input("Enter the order m2:")) 
-n2=int(input("Enter the order n2:"))
+m = int(input("Enter the order m:"))
+n = int(input("Enter the order n:"))
+p = int(input("Enter the order p:"))
+q = int(input("Enter the order q:"))
 
-if n1 == m2:
-   print("Valid")
+if (m < 1 or n < 1 or p < 1 or q < 1):
+    print("Error:Kindly enter valid order ")
+    exit()
+
+if n == p:
+    print("Valid matrix")
 else:
-    print("Invalid")
-    
+    print("Invalid matrix")
+    exit()
+
+print("Matrix of order:", m, "*", q, "will be obtained.")
+
 print("Enter elements for l1:")
-for i in range(m1):
+for i in range(m):
     row = []
-    for j in range(n1):
-        x=int(input())
+    for j in range(n):
+        x = int(input())
         row.append(x)
     l1.append(row)
-print("Enter elements for l2:")
-for i in range(m2):
-    row = []
-    for j in range(n2):
-        y=int(input())
-        row.append(y)
-    l2.append(row)    
-print("L1:",l1)
-print("L2:",l2)
 
-for i in range(len(l1)):
+print("Enter elements for l2:")
+for i in range(p):
     row = []
-    for j in range(len(l2[0])):
-        for k in range(len(l2)):
-            result[i][j] = result[i][j] + l1[i][k]*l2[k][j]
+    for j in range(q):
+        y = int(input())
+        row.append(y)
+    l2.append(row)
+
+print("L1:", l1)
+print("L2:", l2)
+
+for i in range(m):
+    row = []
+    for j in range(q):
+        sum1 = 0
+        for k in range(p):
+            sum1 += l1[i][k] * l2[k][j]
+        row.append(sum1)
+    result.append(row)
+
+print("Multiplication of two matrices:")
+print(result)
