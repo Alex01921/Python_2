@@ -28,3 +28,7 @@ for val, key in lst:
     finalList.append((key, val))
 
 print(dict(finalList[0:10]))
+
+# sample.txt
+# Line 1: Hello, world! This is a test. Hello world.
+# Line 2: Testing, one two three. Testing one two.
